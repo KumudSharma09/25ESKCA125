@@ -1,0 +1,67 @@
+/* Background */
+body{
+    background: #f4f7fc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header{
+    background: linear-gradient(to right,#4facfe,#00f2fe);
+}
+
+/* Card */
+.card{
+    border: none;
+    border-radius: 15px;
+}
+
+/* Labels */
+.form-label{
+    font-weight: bold;
+}
+
+/* Inputs */
+.form-control,
+.form-select{
+    border-radius: 8px;
+}
+
+/* Radio Buttons */
+input[type="radio"]{
+    margin-top: 10px;
+}
+
+/* Submit Button */
+.btn-success{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-success:hover{
+    transform: scale(1.03);
+}
+
+/* Confirmation Card */
+.confirm-card{
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.card-header{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.badge{
+    font-size: 16px;
+    padding: 10px 15px;
+}
