@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fruit Game</title>
+
+<style>
+body{
+text-align:center;
+background:lightpink;
+}
+
+div{
+background:white;
+width:300px;
+margin:auto;
+padding:20px;
+}
+
+img{
+width:150px;
+}
+</style>
+
+</head>
+<body>
+
+<div>
+
+<h2>Fruit Game</h2>
+
+<button onclick="startGame()">Start</button>
+
+<p>Apple = <span id="apple">0</span></p>
+<p>Banana = <span id="banana">0</span></p>
+
+<img id="pic" onclick="clickFruit()">
+
+</div>
+
+<script>
+
+let a=0;
+let b=0;
+let fruit="";
+
+function startGame(){
+showFruit();
+}
+
+function showFruit(){
+
+let x=Math.random();
+
+if(x<0.5){
+fruit="apple";
+document.getElementById("pic").src="apple.png";
+}
+else{
+fruit="banana";
+document.getElementById("pic").src="banana.png";
+}
+
+}
+
+function clickFruit(){
+
+if(fruit=="apple"){
+a=a+1;
+document.getElementById("apple").innerHTML=a;
+}
+else{
+b=b+1;
+document.getElementById("banana").innerHTML=b;
+}
+
+showFruit();
+
+}
+
+</script>
+
+</body>
+</html>
+```
